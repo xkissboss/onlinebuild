@@ -1,0 +1,65 @@
+﻿<style type="text/css" media="screen">
+    #code_editor {
+        width: 100%;
+        height: 400px;
+        float: left;
+        font-size: 14px;
+    }
+</style>
+
+<div>
+    <div id="code_editor"></div>
+    <span><button id="run_btn">运行</button></span>
+</div>
+<div>
+    <span>运行结果</span>
+    <div id="run_data">
+    </div>
+</div>
+
+<script src="/ace/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+<script src="/ace/src-noconflict/ext-language_tools.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#run_btn').click(function () {
+
+
+            if (isExitsFunction('run_function')) {
+
+                try {
+                    run_function();
+                    return;
+                }
+                catch (err) {
+                    alert(err.message)
+                    return;
+                }
+            }
+            
+            var code = editor.getValue();
+            if (code == "" || code == undefined || code == null) {
+                alert('请填写代码');
+                $('#code_editor').focus();
+                return;
+            }
+
+            $.post(reqUrl, { 'code': Base64.encode(code) }, function (rsp) {
+                if (rsp.code === 0) {
+                    $('#run_data').html('运行成功：' + rsp.message);
+                } else {
+                    $('#run_data').html('运行失败：' + rsp.message);
+                }
+
+            });
+        });
+    });
+
+    var from_code = getUrlParam('code');
+    if (from_code) {
+        try {
+            from_code = Base64.decode(from_code);
+        } catch (err) {
+            from_code = '';
+        }
+    }
+</script>

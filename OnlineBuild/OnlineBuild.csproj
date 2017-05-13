@@ -1,0 +1,1385 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <AssemblyName>Online</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="wwwroot\ace\src-noconflict\ace.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\ext-beautify.js" />
+    <Content Include="wwwroot\ace\src-noconflict\ext-chromevox.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\ext-elastic_tabstops_lite.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\ext-emmet.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\ext-error_marker.js" />
+    <Content Include="wwwroot\ace\src-noconflict\ext-keybinding_menu.js" />
+    <Content Include="wwwroot\ace\src-noconflict\ext-language_tools.js" />
+    <Content Include="wwwroot\ace\src-noconflict\ext-linking.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\ext-modelist.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\ext-old_ie.js" />
+    <Content Include="wwwroot\ace\src-noconflict\ext-searchbox.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\ext-settings_menu.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\ext-spellcheck.js" />
+    <Content Include="wwwroot\ace\src-noconflict\ext-split.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\ext-static_highlight.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\ext-statusbar.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\ext-textarea.js" />
+    <Content Include="wwwroot\ace\src-noconflict\ext-themelist.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\ext-whitespace.js" />
+    <Content Include="wwwroot\ace\src-noconflict\keybinding-emacs.js" />
+    <Content Include="wwwroot\ace\src-noconflict\keybinding-vim.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-abap.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-abc.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-actionscript.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-ada.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-apache_conf.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-applescript.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-asciidoc.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-assembly_x86.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-autohotkey.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-batchfile.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-bro.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-c9search.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-cirru.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-clojure.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-cobol.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-coffee.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-coldfusion.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-csharp.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-css.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-curly.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-c_cpp.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-d.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-dart.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-diff.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-django.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-dockerfile.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-dot.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-drools.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-eiffel.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-ejs.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-elixir.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-elm.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-erlang.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-forth.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-fortran.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-ftl.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-gcode.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-gherkin.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-gitignore.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-glsl.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-gobstones.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-golang.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-groovy.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-haml.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-handlebars.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-haskell.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-haskell_cabal.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-haxe.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-hjson.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-html.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-html_elixir.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-html_ruby.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-ini.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-io.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-jack.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-jade.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-java.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-javascript.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-json.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-jsoniq.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-jsp.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-jsx.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-julia.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-kotlin.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-latex.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-lean.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-less.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-liquid.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-lisp.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-livescript.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-live_script.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-logiql.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-lsl.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-lua.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-luapage.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-lucene.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-makefile.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-markdown.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-mask.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-matlab.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-mavens_mate_log.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-maze.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-mel.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-mipsassembler.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-mips_assembler.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-mushcode.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-mysql.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-nix.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-nsis.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-objectivec.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-ocaml.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-pascal.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-perl.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-pgsql.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-php.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-plain_text.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-powershell.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-praat.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-prolog.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-properties.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-protobuf.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-python.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-r.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-razor.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-rdoc.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-rhtml.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-rst.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-ruby.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-rust.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-sass.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-scad.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-scala.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-scheme.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-scss.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-sh.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-sjs.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-smarty.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-snippets.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-soy_template.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-space.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-sql.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-sqlserver.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-stylus.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-svg.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-swift.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-swig.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-tcl.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-tex.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-text.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-textile.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-toml.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-tsx.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-twig.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-typescript.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-vala.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-vbscript.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-velocity.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-verilog.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-vhdl.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-wollok.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-xml.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\mode-xquery.js" />
+    <Content Include="wwwroot\ace\src-noconflict\mode-yaml.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\abap.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\abc.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\actionscript.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\snippets\ada.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\apache_conf.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\applescript.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\snippets\asciidoc.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\assembly_x86.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\snippets\autohotkey.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\batchfile.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\snippets\bro.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\c9search.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\cirru.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\snippets\clojure.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\snippets\cobol.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\snippets\coffee.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\snippets\coldfusion.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\snippets\csharp.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\css.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\curly.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\c_cpp.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\snippets\d.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\snippets\dart.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\snippets\diff.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\snippets\django.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\dockerfile.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\snippets\dot.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\drools.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\snippets\eiffel.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\ejs.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\elixir.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\elm.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\erlang.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\snippets\forth.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\snippets\fortran.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\ftl.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\gcode.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\snippets\gherkin.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\gitignore.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\glsl.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\snippets\gobstones.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\golang.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\snippets\groovy.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\haml.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\handlebars.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\snippets\haskell.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\haskell_cabal.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\haxe.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\hjson.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\snippets\html.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\html_elixir.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\html_ruby.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\snippets\ini.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\io.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\jack.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\jade.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\java.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\javascript.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\snippets\json.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\snippets\jsoniq.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\jsp.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\jsx.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\julia.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\snippets\kotlin.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\latex.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\snippets\lean.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\less.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\liquid.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\snippets\lisp.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\livescript.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\snippets\live_script.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\logiql.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\snippets\lsl.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\lua.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\luapage.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\lucene.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\makefile.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\snippets\markdown.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\mask.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\matlab.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\snippets\maze.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\mel.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\mipsassembler.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\mips_assembler.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\snippets\mushcode.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\mysql.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\snippets\nix.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\nsis.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\snippets\objectivec.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\snippets\ocaml.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\pascal.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\snippets\perl.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\snippets\pgsql.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\php.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\plain_text.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\powershell.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\snippets\praat.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\prolog.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\properties.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\protobuf.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\snippets\python.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\r.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\snippets\razor.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\snippets\rdoc.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\snippets\rhtml.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\snippets\rst.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\ruby.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\snippets\rust.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\snippets\sass.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\scad.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\scala.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\snippets\scheme.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\scss.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\sh.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\sjs.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\smarty.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\snippets.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\snippets\soy_template.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\snippets\space.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\snippets\sql.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\sqlserver.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\stylus.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\svg.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\swift.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\swig.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\tcl.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\tex.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\text.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\textile.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\toml.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\tsx.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\twig.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\snippets\typescript.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\snippets\vala.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\snippets\vbscript.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\snippets\velocity.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\snippets\verilog.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\vhdl.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\snippets\wollok.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\xml.js" />
+    <Content Include="wwwroot\ace\src-noconflict\snippets\xquery.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\snippets\yaml.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\theme-ambiance.js" />
+    <Content Include="wwwroot\ace\src-noconflict\theme-chaos.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\theme-chrome.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\theme-clouds.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\theme-clouds_midnight.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\theme-cobalt.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\theme-crimson_editor.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\theme-dawn.js" />
+    <Content Include="wwwroot\ace\src-noconflict\theme-dreamweaver.js" />
+    <Content Include="wwwroot\ace\src-noconflict\theme-eclipse.js" />
+    <Content Include="wwwroot\ace\src-noconflict\theme-github.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\theme-idle_fingers.js" />
+    <Content Include="wwwroot\ace\src-noconflict\theme-iplastic.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\theme-katzenmilch.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\theme-kr_theme.js" />
+    <Content Include="wwwroot\ace\src-noconflict\theme-kuroir.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\theme-merbivore.js" />
+    <Content Include="wwwroot\ace\src-noconflict\theme-merbivore_soft.js" />
+    <Content Include="wwwroot\ace\src-noconflict\theme-monokai.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\theme-mono_industrial.js" />
+    <Content Include="wwwroot\ace\src-noconflict\theme-pastel_on_dark.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\theme-solarized_dark.js" />
+    <Content Include="wwwroot\ace\src-noconflict\theme-solarized_light.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\theme-sqlserver.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\theme-terminal.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\theme-textmate.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\theme-tomorrow.js" />
+    <Content Include="wwwroot\ace\src-noconflict\theme-tomorrow_night.js" />
+    <Content Include="wwwroot\ace\src-noconflict\theme-tomorrow_night_blue.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\theme-tomorrow_night_bright.js" />
+    <Content Include="wwwroot\ace\src-noconflict\theme-tomorrow_night_eighties.js" />
+    <Content Include="wwwroot\ace\src-noconflict\theme-twilight.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\theme-vibrant_ink.js" />
+    <Content Include="wwwroot\ace\src-noconflict\theme-xcode.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\worker-coffee.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\worker-css.js" />
+    <Content Include="wwwroot\ace\src-noconflict\worker-html.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\worker-javascript.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\worker-json.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\worker-lua.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src-noconflict\worker-php.js" />
+    <Content Include="wwwroot\ace\src-noconflict\worker-xml.js" />
+    <Content Include="wwwroot\ace\src-noconflict\worker-xquery.js" />
+    <Content Include="wwwroot\ace\src\ace.js" />
+    <Content Include="wwwroot\ace\src\ext-beautify.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\ext-chromevox.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\ext-elastic_tabstops_lite.js" />
+    <Content Include="wwwroot\ace\src\ext-emmet.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\ext-error_marker.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\ext-keybinding_menu.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\ext-language_tools.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\ext-linking.js" />
+    <Content Include="wwwroot\ace\src\ext-modelist.js" />
+    <Content Include="wwwroot\ace\src\ext-old_ie.js" />
+    <Content Include="wwwroot\ace\src\ext-searchbox.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\ext-settings_menu.js" />
+    <Content Include="wwwroot\ace\src\ext-spellcheck.js" />
+    <Content Include="wwwroot\ace\src\ext-split.js" />
+    <Content Include="wwwroot\ace\src\ext-static_highlight.js" />
+    <Content Include="wwwroot\ace\src\ext-statusbar.js" />
+    <Content Include="wwwroot\ace\src\ext-textarea.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\ext-themelist.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\ext-whitespace.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\keybinding-emacs.js" />
+    <Content Include="wwwroot\ace\src\keybinding-vim.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\mode-abap.js" />
+    <Content Include="wwwroot\ace\src\mode-abc.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\mode-actionscript.js" />
+    <Content Include="wwwroot\ace\src\mode-ada.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\mode-apache_conf.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\mode-applescript.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\mode-asciidoc.js" />
+    <Content Include="wwwroot\ace\src\mode-assembly_x86.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\mode-autohotkey.js" />
+    <Content Include="wwwroot\ace\src\mode-batchfile.js" />
+    <Content Include="wwwroot\ace\src\mode-bro.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\mode-c9search.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\mode-cirru.js" />
+    <Content Include="wwwroot\ace\src\mode-clojure.js" />
+    <Content Include="wwwroot\ace\src\mode-cobol.js" />
+    <Content Include="wwwroot\ace\src\mode-coffee.js" />
+    <Content Include="wwwroot\ace\src\mode-coldfusion.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\mode-csharp.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\mode-css.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\mode-curly.js" />
+    <Content Include="wwwroot\ace\src\mode-c_cpp.js" />
+    <Content Include="wwwroot\ace\src\mode-d.js" />
+    <Content Include="wwwroot\ace\src\mode-dart.js" />
+    <Content Include="wwwroot\ace\src\mode-diff.js" />
+    <Content Include="wwwroot\ace\src\mode-django.js" />
+    <Content Include="wwwroot\ace\src\mode-dockerfile.js" />
+    <Content Include="wwwroot\ace\src\mode-dot.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\mode-drools.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\mode-eiffel.js" />
+    <Content Include="wwwroot\ace\src\mode-ejs.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\mode-elixir.js" />
+    <Content Include="wwwroot\ace\src\mode-elm.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\mode-erlang.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\mode-forth.js" />
+    <Content Include="wwwroot\ace\src\mode-fortran.js" />
+    <Content Include="wwwroot\ace\src\mode-ftl.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\mode-gcode.js" />
+    <Content Include="wwwroot\ace\src\mode-gherkin.js" />
+    <Content Include="wwwroot\ace\src\mode-gitignore.js" />
+    <Content Include="wwwroot\ace\src\mode-glsl.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\mode-gobstones.js" />
+    <Content Include="wwwroot\ace\src\mode-golang.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\mode-groovy.js" />
+    <Content Include="wwwroot\ace\src\mode-haml.js" />
+    <Content Include="wwwroot\ace\src\mode-handlebars.js" />
+    <Content Include="wwwroot\ace\src\mode-haskell.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\mode-haskell_cabal.js" />
+    <Content Include="wwwroot\ace\src\mode-haxe.js" />
+    <Content Include="wwwroot\ace\src\mode-hjson.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\mode-html.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\mode-html_elixir.js" />
+    <Content Include="wwwroot\ace\src\mode-html_ruby.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\mode-ini.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\mode-io.js" />
+    <Content Include="wwwroot\ace\src\mode-jack.js" />
+    <Content Include="wwwroot\ace\src\mode-jade.js" />
+    <Content Include="wwwroot\ace\src\mode-java.js" />
+    <Content Include="wwwroot\ace\src\mode-javascript.js" />
+    <Content Include="wwwroot\ace\src\mode-json.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\mode-jsoniq.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\mode-jsp.js" />
+    <Content Include="wwwroot\ace\src\mode-jsx.js" />
+    <Content Include="wwwroot\ace\src\mode-julia.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\mode-kotlin.js" />
+    <Content Include="wwwroot\ace\src\mode-latex.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\mode-lean.js" />
+    <Content Include="wwwroot\ace\src\mode-less.js" />
+    <Content Include="wwwroot\ace\src\mode-liquid.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\mode-lisp.js" />
+    <Content Include="wwwroot\ace\src\mode-livescript.js" />
+    <Content Include="wwwroot\ace\src\mode-live_script.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\mode-logiql.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\mode-lsl.js" />
+    <Content Include="wwwroot\ace\src\mode-lua.js" />
+    <Content Include="wwwroot\ace\src\mode-luapage.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\mode-lucene.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\mode-makefile.js" />
+    <Content Include="wwwroot\ace\src\mode-markdown.js" />
+    <Content Include="wwwroot\ace\src\mode-mask.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\mode-matlab.js" />
+    <Content Include="wwwroot\ace\src\mode-maze.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\mode-mel.js" />
+    <Content Include="wwwroot\ace\src\mode-mipsassembler.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\mode-mips_assembler.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\mode-mushcode.js" />
+    <Content Include="wwwroot\ace\src\mode-mysql.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\mode-nix.js" />
+    <Content Include="wwwroot\ace\src\mode-nsis.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\mode-objectivec.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\mode-ocaml.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\mode-pascal.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\mode-perl.js" />
+    <Content Include="wwwroot\ace\src\mode-pgsql.js" />
+    <Content Include="wwwroot\ace\src\mode-php.js" />
+    <Content Include="wwwroot\ace\src\mode-plain_text.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\mode-powershell.js" />
+    <Content Include="wwwroot\ace\src\mode-praat.js" />
+    <Content Include="wwwroot\ace\src\mode-prolog.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\mode-properties.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\mode-protobuf.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\mode-python.js" />
+    <Content Include="wwwroot\ace\src\mode-r.js" />
+    <Content Include="wwwroot\ace\src\mode-razor.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\mode-rdoc.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\mode-rhtml.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\mode-rst.js" />
+    <Content Include="wwwroot\ace\src\mode-ruby.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\mode-rust.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\mode-sass.js" />
+    <Content Include="wwwroot\ace\src\mode-scad.js" />
+    <Content Include="wwwroot\ace\src\mode-scala.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\mode-scheme.js" />
+    <Content Include="wwwroot\ace\src\mode-scss.js" />
+    <Content Include="wwwroot\ace\src\mode-sh.js" />
+    <Content Include="wwwroot\ace\src\mode-sjs.js" />
+    <Content Include="wwwroot\ace\src\mode-smarty.js" />
+    <Content Include="wwwroot\ace\src\mode-snippets.js" />
+    <Content Include="wwwroot\ace\src\mode-soy_template.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\mode-space.js" />
+    <Content Include="wwwroot\ace\src\mode-sql.js" />
+    <Content Include="wwwroot\ace\src\mode-sqlserver.js" />
+    <Content Include="wwwroot\ace\src\mode-stylus.js" />
+    <Content Include="wwwroot\ace\src\mode-svg.js" />
+    <Content Include="wwwroot\ace\src\mode-swift.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\mode-swig.js" />
+    <Content Include="wwwroot\ace\src\mode-tcl.js" />
+    <Content Include="wwwroot\ace\src\mode-tex.js" />
+    <Content Include="wwwroot\ace\src\mode-text.js" />
+    <Content Include="wwwroot\ace\src\mode-textile.js" />
+    <Content Include="wwwroot\ace\src\mode-toml.js" />
+    <Content Include="wwwroot\ace\src\mode-tsx.js" />
+    <Content Include="wwwroot\ace\src\mode-twig.js" />
+    <Content Include="wwwroot\ace\src\mode-typescript.js" />
+    <Content Include="wwwroot\ace\src\mode-vala.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\mode-vbscript.js" />
+    <Content Include="wwwroot\ace\src\mode-velocity.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\mode-verilog.js" />
+    <Content Include="wwwroot\ace\src\mode-vhdl.js" />
+    <Content Include="wwwroot\ace\src\mode-wollok.js" />
+    <Content Include="wwwroot\ace\src\mode-xml.js" />
+    <Content Include="wwwroot\ace\src\mode-xquery.js" />
+    <Content Include="wwwroot\ace\src\mode-yaml.js" />
+    <Content Include="wwwroot\ace\src\snippets\abap.js" />
+    <Content Include="wwwroot\ace\src\snippets\abc.js" />
+    <Content Include="wwwroot\ace\src\snippets\actionscript.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\ada.js" />
+    <Content Include="wwwroot\ace\src\snippets\apache_conf.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\applescript.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\asciidoc.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\assembly_x86.js" />
+    <Content Include="wwwroot\ace\src\snippets\autohotkey.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\batchfile.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\bro.js" />
+    <Content Include="wwwroot\ace\src\snippets\c9search.js" />
+    <Content Include="wwwroot\ace\src\snippets\cirru.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\clojure.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\cobol.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\coffee.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\coldfusion.js" />
+    <Content Include="wwwroot\ace\src\snippets\csharp.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\css.js" />
+    <Content Include="wwwroot\ace\src\snippets\curly.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\c_cpp.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\d.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\dart.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\diff.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\django.js" />
+    <Content Include="wwwroot\ace\src\snippets\dockerfile.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\dot.js" />
+    <Content Include="wwwroot\ace\src\snippets\drools.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\eiffel.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\ejs.js" />
+    <Content Include="wwwroot\ace\src\snippets\elixir.js" />
+    <Content Include="wwwroot\ace\src\snippets\elm.js" />
+    <Content Include="wwwroot\ace\src\snippets\erlang.js" />
+    <Content Include="wwwroot\ace\src\snippets\forth.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\fortran.js" />
+    <Content Include="wwwroot\ace\src\snippets\ftl.js" />
+    <Content Include="wwwroot\ace\src\snippets\gcode.js" />
+    <Content Include="wwwroot\ace\src\snippets\gherkin.js" />
+    <Content Include="wwwroot\ace\src\snippets\gitignore.js" />
+    <Content Include="wwwroot\ace\src\snippets\glsl.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\gobstones.js" />
+    <Content Include="wwwroot\ace\src\snippets\golang.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\groovy.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\haml.js" />
+    <Content Include="wwwroot\ace\src\snippets\handlebars.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\haskell.js" />
+    <Content Include="wwwroot\ace\src\snippets\haskell_cabal.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\haxe.js" />
+    <Content Include="wwwroot\ace\src\snippets\hjson.js" />
+    <Content Include="wwwroot\ace\src\snippets\html.js" />
+    <Content Include="wwwroot\ace\src\snippets\html_elixir.js" />
+    <Content Include="wwwroot\ace\src\snippets\html_ruby.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\ini.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\io.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\jack.js" />
+    <Content Include="wwwroot\ace\src\snippets\jade.js" />
+    <Content Include="wwwroot\ace\src\snippets\java.js" />
+    <Content Include="wwwroot\ace\src\snippets\javascript.js" />
+    <Content Include="wwwroot\ace\src\snippets\json.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\jsoniq.js" />
+    <Content Include="wwwroot\ace\src\snippets\jsp.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\jsx.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\julia.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\kotlin.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\latex.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\lean.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\less.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\liquid.js" />
+    <Content Include="wwwroot\ace\src\snippets\lisp.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\livescript.js" />
+    <Content Include="wwwroot\ace\src\snippets\live_script.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\logiql.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\lsl.js" />
+    <Content Include="wwwroot\ace\src\snippets\lua.js" />
+    <Content Include="wwwroot\ace\src\snippets\luapage.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\lucene.js" />
+    <Content Include="wwwroot\ace\src\snippets\makefile.js" />
+    <Content Include="wwwroot\ace\src\snippets\markdown.js" />
+    <Content Include="wwwroot\ace\src\snippets\mask.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\matlab.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\maze.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\mel.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\mipsassembler.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\mips_assembler.js" />
+    <Content Include="wwwroot\ace\src\snippets\mushcode.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\mysql.js" />
+    <Content Include="wwwroot\ace\src\snippets\nix.js" />
+    <Content Include="wwwroot\ace\src\snippets\nsis.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\objectivec.js" />
+    <Content Include="wwwroot\ace\src\snippets\ocaml.js" />
+    <Content Include="wwwroot\ace\src\snippets\pascal.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\perl.js" />
+    <Content Include="wwwroot\ace\src\snippets\pgsql.js" />
+    <Content Include="wwwroot\ace\src\snippets\php.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\plain_text.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\powershell.js" />
+    <Content Include="wwwroot\ace\src\snippets\praat.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\prolog.js" />
+    <Content Include="wwwroot\ace\src\snippets\properties.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\protobuf.js" />
+    <Content Include="wwwroot\ace\src\snippets\python.js" />
+    <Content Include="wwwroot\ace\src\snippets\r.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\razor.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\rdoc.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\rhtml.js" />
+    <Content Include="wwwroot\ace\src\snippets\rst.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\ruby.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\rust.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\sass.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\scad.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\scala.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\scheme.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\scss.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\sh.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\sjs.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\smarty.js" />
+    <Content Include="wwwroot\ace\src\snippets\snippets.js" />
+    <Content Include="wwwroot\ace\src\snippets\soy_template.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\space.js" />
+    <Content Include="wwwroot\ace\src\snippets\sql.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\sqlserver.js" />
+    <Content Include="wwwroot\ace\src\snippets\stylus.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\svg.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\swift.js" />
+    <Content Include="wwwroot\ace\src\snippets\swig.js" />
+    <Content Include="wwwroot\ace\src\snippets\tcl.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\tex.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\text.js" />
+    <Content Include="wwwroot\ace\src\snippets\textile.js" />
+    <Content Include="wwwroot\ace\src\snippets\toml.js" />
+    <Content Include="wwwroot\ace\src\snippets\tsx.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\twig.js" />
+    <Content Include="wwwroot\ace\src\snippets\typescript.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\vala.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\vbscript.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\velocity.js" />
+    <Content Include="wwwroot\ace\src\snippets\verilog.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\vhdl.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\wollok.js" />
+    <Content Include="wwwroot\ace\src\snippets\xml.js" />
+    <Content Include="wwwroot\ace\src\snippets\xquery.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\snippets\yaml.js" />
+    <Content Include="wwwroot\ace\src\theme-ambiance.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\theme-chaos.js" />
+    <Content Include="wwwroot\ace\src\theme-chrome.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\theme-clouds.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\theme-clouds_midnight.js" />
+    <Content Include="wwwroot\ace\src\theme-cobalt.js" />
+    <Content Include="wwwroot\ace\src\theme-crimson_editor.js" />
+    <Content Include="wwwroot\ace\src\theme-dawn.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\theme-dreamweaver.js" />
+    <Content Include="wwwroot\ace\src\theme-eclipse.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\theme-github.js" />
+    <Content Include="wwwroot\ace\src\theme-idle_fingers.js" />
+    <Content Include="wwwroot\ace\src\theme-iplastic.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\theme-katzenmilch.js" />
+    <Content Include="wwwroot\ace\src\theme-kr_theme.js" />
+    <Content Include="wwwroot\ace\src\theme-kuroir.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\theme-merbivore.js" />
+    <Content Include="wwwroot\ace\src\theme-merbivore_soft.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\theme-monokai.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\theme-mono_industrial.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\theme-pastel_on_dark.js" />
+    <Content Include="wwwroot\ace\src\theme-solarized_dark.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\theme-solarized_light.js" />
+    <Content Include="wwwroot\ace\src\theme-sqlserver.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\theme-terminal.js" />
+    <Content Include="wwwroot\ace\src\theme-textmate.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\theme-tomorrow.js" />
+    <Content Include="wwwroot\ace\src\theme-tomorrow_night.js" />
+    <Content Include="wwwroot\ace\src\theme-tomorrow_night_blue.js" />
+    <Content Include="wwwroot\ace\src\theme-tomorrow_night_bright.js" />
+    <Content Include="wwwroot\ace\src\theme-tomorrow_night_eighties.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\theme-twilight.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\theme-vibrant_ink.js" />
+    <Content Include="wwwroot\ace\src\theme-xcode.js" />
+    <Content Include="wwwroot\ace\src\worker-coffee.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\worker-css.js" />
+    <Content Include="wwwroot\ace\src\worker-html.js" />
+    <Content Include="wwwroot\ace\src\worker-javascript.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\worker-json.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\ace\src\worker-lua.js" />
+    <Content Include="wwwroot\ace\src\worker-php.js" />
+    <Content Include="wwwroot\ace\src\worker-xml.js" />
+    <Content Include="wwwroot\ace\src\worker-xquery.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\jslib\jquery\jquery-1.10.2.js" />
+    <Content Include="wwwroot\jslib\jquery\jquery-1.10.2.min.js" />
+    <Content Include="wwwroot\jslib\jquery\jquery-1.10.2.min.map" />
+    <Content Include="wwwroot\js\base64.js" />
+    <Content Include="wwwroot\js\base64.min.js" />
+    <Content Include="wwwroot\js\common.js" />
+    <Content Include="wwwroot\js\default_code.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Model\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.1.1" />
+    <PackageReference Include="Microsoft.CodeAnalysis.Compilers" Version="2.1.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="2.1.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Scripting" Version="2.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="1.1.1" />
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="4.3.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.0" />
+  </ItemGroup>
+
+</Project>

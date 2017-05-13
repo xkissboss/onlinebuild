@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "C++";
+}
+
+@{ Html.RenderPartial("_CodeInput");}
+
+<script type="text/javascript">
+
+    ace.require("ace/ext/language_tools");
+    var editor = ace.edit("code_editor");
+    editor.setOptions({
+        enableBasicAutocompletion: true,
+        enableSnippets: true,
+        enableLiveAutocompletion: true
+    });
+    if (from_code) {
+        editor.setValue(from_code);
+    } else {
+        editor.setValue(Base64.decode(codeArr['c++']));
+    }
+
+    editor.setTheme("ace/theme/monokai");
+    editor.getSession().setMode("ace/mode/c_cpp");
+    var reqUrl = '/code/RunCPlusPlus';
+</script>

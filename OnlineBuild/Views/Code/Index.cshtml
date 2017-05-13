@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>在线编译</title>
+    <script src="~/jslib/jquery/jquery-1.10.2.js"></script>
+    <script src="~/js/base64.js"></script>
+    <script src="~/js/default_code.js"></script>
+    <script charset="utf-8" type="text/javascript">
+        function change_type(value) {
+            $('#code_txt').val(base64decode(codeArr[value]));
+        }
+
+        $(document).ready(function () {
+            $('#run_btn').click(function () {
+                var url = {
+                    'c': 'RunC',
+                    'c++': 'RunCPlusPlus',
+                    'python': 'RunPython',
+                    'java': 'RunJava',
+                };
+
+                var code = $('#code_txt').val();
+                if (code == "" || code == undefined || code == null) {
+                    alert('请填写代码');
+                    $('#code_txt').focus();
+                    return;
+                }
+
+                var reqUrl = url[$('#code_type').val()];
+                $.post(reqUrl, { 'code': base64encode(code) }, function (rsp) {
+                    if (rsp.code === 0) {
+                        $('#run_data').html('运行成功：' + rsp.message);
+                    } else {
+                        $('#run_data').html('运行失败：' + rsp.message);
+                    }
+                    
+                });
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <div>
+        <div>
+            <select id="code_type" onchange="change_type(this.value)">
+                <option value="python">python</option>
+                <option value="c">c</option>
+                <option value="c++">c++</option>
+                <option value="java">java</option>
+            </select>
+        </div>
+
+        <div>
+            <div> <span><button id="reset_btn">还原到默认code</button></span></div>
+            <div>
+                <textarea id="code_txt" cols="100" rows="10">
+            </textarea>
+            </div>
+            <span><button id="run_btn">运行</button></span>
+        </div>
+        <div>
+            <span>运行结果</span>
+            <div id="run_data">
+
+            </div>
+        </div>
+    </div>
+
+    <script charset="utf-8" type="text/javascript">
+        change_type('python');
+    </script>
+</body>
+
+</html>

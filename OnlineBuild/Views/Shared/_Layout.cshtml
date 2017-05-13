@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <script src="/ace/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/ace/src-noconflict/ext-language_tools.js"></script>
+    <script src="/jslib/jquery/jquery-1.10.2.js"></script>
+    <script src="/js/base64.min.js"></script>
+    <script src="/js/default_code.js"></script>
+    <script src="/js/common.js"></script>
+</head>
+<body>
+    <div>
+        <a href="/code/python">Python</a>&nbsp;&nbsp;&nbsp;&nbsp;|
+        <a href="/code/csharp">csharp</a>&nbsp;&nbsp;&nbsp;&nbsp;|
+        <a href="/code/c">C</a>&nbsp;&nbsp;&nbsp;&nbsp;|
+        <a href="/code/cpp">C++</a>&nbsp;&nbsp;&nbsp;&nbsp;|
+        <a href="/code/java">Java</a>&nbsp;&nbsp;&nbsp;&nbsp;|
+        <a href="/code/js">javascript</a>&nbsp;&nbsp;&nbsp;&nbsp;|
+        <a href="/code/nodejs">nodejs</a>&nbsp;&nbsp;&nbsp;&nbsp;|
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

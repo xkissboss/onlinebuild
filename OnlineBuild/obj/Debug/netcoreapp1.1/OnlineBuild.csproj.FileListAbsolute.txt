@@ -1,0 +1,9 @@
+D:\vswork\Workspace\OnlineBuild\OnlineBuild\obj\Debug\netcoreapp1.1\OnlineBuild.AssemblyInfo.cs
+D:\vswork\Workspace\OnlineBuild\OnlineBuild\obj\Debug\netcoreapp1.1\OnlineBuild.csprojResolveAssemblyReference.cache
+D:\vswork\Workspace\OnlineBuild\OnlineBuild\bin\Debug\netcoreapp1.1\Online.deps.json
+D:\vswork\Workspace\OnlineBuild\OnlineBuild\bin\Debug\netcoreapp1.1\Online.runtimeconfig.json
+D:\vswork\Workspace\OnlineBuild\OnlineBuild\bin\Debug\netcoreapp1.1\Online.runtimeconfig.dev.json
+D:\vswork\Workspace\OnlineBuild\OnlineBuild\bin\Debug\netcoreapp1.1\Online.dll
+D:\vswork\Workspace\OnlineBuild\OnlineBuild\bin\Debug\netcoreapp1.1\Online.pdb
+D:\vswork\Workspace\OnlineBuild\OnlineBuild\obj\Debug\netcoreapp1.1\Online.dll
+D:\vswork\Workspace\OnlineBuild\OnlineBuild\obj\Debug\netcoreapp1.1\Online.pdb

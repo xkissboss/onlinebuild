@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Java8";
+}
+
+@{ Html.RenderPartial("_CodeInput");}
+
+<script type="text/javascript">
+    //change_type('java');
+    ace.require("ace/ext/language_tools");
+    var editor = ace.edit("code_editor");
+    editor.setOptions({
+        enableBasicAutocompletion: true,
+        enableSnippets: true,
+        enableLiveAutocompletion: true
+    });
+    editor.setHighlightActiveLine(true);
+    if (from_code) {
+        editor.setValue(from_code);
+    } else {
+        editor.setValue(Base64.decode(codeArr['java']));
+    }
+    editor.setTheme("ace/theme/monokai");
+    editor.getSession().setMode("ace/mode/java");
+    var reqUrl = '/code/runjava';
+</script>
